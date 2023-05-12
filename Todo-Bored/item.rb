@@ -45,22 +45,24 @@ class Item
         @deadline = new_deadline if Item.valid_date?(new_deadline)
     end
 
+        
+
 end
 
 #item1 = Item.new
 
 #test self.valid_date?
-puts Item.valid_date?('2019-10-25') # true
-puts Item.valid_date?('1912-06-23') # true
-puts Item.valid_date?('2018-13-20') # false
-puts Item.valid_date?('2018-12-32') # false
-puts Item.valid_date?('2019-10-42') # flase
+# puts Item.valid_date?('2019-10-25') # true
+# puts Item.valid_date?('1912-06-23') # true
+# puts Item.valid_date?('2018-13-20') # false
+# puts Item.valid_date?('2018-12-32') # false
+# puts Item.valid_date?('2019-10-42') # flase
 
 item1 = Item.new('Fix login page', '2019-10-25', 'The page loads too slow.')
 
 item2 = Item.new(
     'Buy Cheese',
-    '2019-10-42',
+    '2019-10-31',
     'You require American, Swiss, Feta, and Mozzarella cheese for the Happy hour!'
 )
 
@@ -71,4 +73,4 @@ item3 = Item.new(
 ) # raises error due to invalid date
 
 
-#puts Item.valid_date?(item2.deadline())
+# puts Item.valid_date?(item2.deadline())
